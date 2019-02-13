@@ -4,6 +4,7 @@ class Config:
     MARVEL_API_BASE_URL='https://gateway.marvel.com:443/v1/public/{}?apikey={}&hash={}'
     MARVEL_API_KEY = os.environ.get('MARVEL_API_KEY')
     SECRET_KEY = os.environ.get('SECRET_KEY')
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://saberdanger:cartoonroyalty@localhost/marvel_app'
 
     SQLALCHEMY_TRACK_MODIFICATIONS=False
     UPLOADED_PHOTOS_DEST='app/static/images/avatars'
