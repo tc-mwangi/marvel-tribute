@@ -1,9 +1,9 @@
 import os
 
 class Config:
-    MARVEL_API_BASE_URL='https://gateway.marvel.com:443/v1/public/{}?apikey={}'
-    MARVEL_API_KEY_PUBLIC = os.environ.get('MARVEL_API_KEY_PUBLIC')
-    MARVEL_API_KEY_PRIVATE = os.environ.get('MARVEL_API_KEY_PRIVATE')
+    MARVEL_API_BASE_URL='https://gateway.marvel.com:443/v1/public/{}?apikey={}&hash={}'
+    MARVEL_API_KEY = os.environ.get('MARVEL_API_KEY')
+    SECRET_KEY = os.environ.get('SECRET_KEY')
 
     SQLALCHEMY_TRACK_MODIFICATIONS=False
     UPLOADED_PHOTOS_DEST='app/static/images/avatars'
